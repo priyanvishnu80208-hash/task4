@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  text-align: center;
+  padding: 30px 15px;
+  transition: 0.3s;
+  font-family: Arial, sans-serif;
+}
+
+.light {
+  background-color: #f5f5f5;
+  color: black;
+}
+
+.dark {
+  background-color: #151515;
+  color: white;
+}
+
+.app h1 {
+  margin-bottom: 15px;
+}
+
+.counter-box {
+  max-width: 450px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #e62429;
+  color: white;
+}
+
+.count {
+  font-size: 65px;
+  margin: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #202020;
+  color: white;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+.heroes {
+  margin: 30px auto;
+}
+
+.heroes p {
+  margin: 12px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.theme-section {
+  margin-top: 30px;
+}
+
+.theme-section button {
+  margin-top: 15px;
+  background-color: #e62429;
+}
+
+@media (max-width: 480px) {
+  .buttons {
+    flex-direction: column;
+  }
+
+  .buttons button {
+    width: 100%;
+  }
+
+  .count {
+    font-size: 50px;
+  }
+}
